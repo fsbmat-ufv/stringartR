@@ -29,3 +29,4 @@ ggplot() +
 
 # 4. (Próximo passo) - Implementar heurística para escolher linhas entre pinos
 # -> Aqui entra a lógica de "qual linha escurece mais a imagem"
+
