@@ -1,0 +1,12 @@
+name: StringArt
+title: StringArt
+username: conectadado
+account: conectadado
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16782258
+bundleId: 11640167
+url: https://conectadado.shinyapps.io/StringArt/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
