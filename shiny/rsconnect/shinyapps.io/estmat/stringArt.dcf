@@ -1,0 +1,12 @@
+name: stringArt
+title: stringArt
+username: estmat
+account: estmat
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17394624
+bundleId: 12019269
+url: https://estmat.shinyapps.io/stringArt/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

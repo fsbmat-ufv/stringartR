@@ -5,7 +5,7 @@ account: conectadado
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17109499
-bundleId: 12016202
+bundleId:
 url: https://conectadado.shinyapps.io/shiny/
 version: 1
 asMultiple: FALSE
