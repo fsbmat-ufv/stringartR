@@ -123,7 +123,7 @@ shinyUI(
               solidHeader = TRUE,
               collapsible = FALSE,
               p("Aplicação interativa para geração de figuras em String Art."),
-              p("As figuras disponíveis incluem círculo, elipse, triângulo, cardioide, polígonos, estrelas, parábola, redes, flores, espirais, curvas paramétricas, regiões, grades e padrões decimais."),
+              p("As figuras disponíveis são: Círculo, Elipse, Triângulo, Cardioide, Hexaflower e Radial."),
               p("Escolha a figura e ajuste apenas os parâmetros principais para gerar a construção.")
             )
           )
@@ -146,42 +146,25 @@ shinyUI(
                 "Escolha a figura:",
                 choices = c(
                   "Círculo",
-                  "Cardioide",
                   "Elipse",
                   "Triângulo",
-                  "Polígono regular",
-                  "Estrela",
-                  "Parábola",
-                  "Rede",
+                  "Cardioide",
                   "Hexaflower",
-                  "Radial",
-                  "Lótus",
-                  "Rosa",
-                  "Espiral",
-                  "Lissajous",
-                  "Região",
-                  "Grade retangular",
-                  "Decimal"
+                  "Radial"
                 ),
                 selected = "Círculo"
               ),
               
-              numericInput(
+              sliderInput(
                 "n",
                 "Número de pregos:",
-                value = 30,
-                min = 3,
-                max = 300,
-                step = 1
+                min = 3, max = 240, value = 30, step = 1
               ),
               
-              numericInput(
+              sliderInput(
                 "k",
                 "Salto / fator (k):",
-                value = 5,
-                min = 1,
-                max = 100,
-                step = 1
+                min = 1, max = 100, value = 5, step = 1
               ),
               
               colourInput(
@@ -205,12 +188,6 @@ shinyUI(
               checkboxInput(
                 "show_labels",
                 "Mostrar rótulos",
-                value = FALSE
-              ),
-              
-              checkboxInput(
-                "template",
-                "Mostrar gabarito sem barbante",
                 value = FALSE
               ),
               
